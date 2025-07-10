@@ -447,35 +447,15 @@ Version      : 1.0
 	});
 	// Skill Progress
 
-	// Video section 1
-	function setupVideoModal(buttonId, modalId, frameId, videoURL) {
-		document.addEventListener('DOMContentLoaded', () => {
-			const playButton = document.getElementById(buttonId);
-			const videoModal = document.getElementById(modalId);
-			const closeModal = videoModal.querySelector("#closeModal");
-			const videoFrame = document.getElementById(frameId);
-
-			const openVideoModal = () => {
-				videoFrame.src = videoURL;
-				videoModal.style.display = 'flex';
-			};
-
-			const closeVideoModal = () => {
-				videoFrame.src = "";
-				videoModal.style.display = 'none';
-			};
-
-			if (playButton) playButton.addEventListener('click', openVideoModal);
-			if (closeModal) closeModal.addEventListener('click', closeVideoModal);
-
-			videoModal.addEventListener('click', (e) => {
-				if (e.target === videoModal) closeVideoModal();
-			});
+	// video
+	if ($(".video-popup").length > 0) {
+		new VenoBox({
+			selector: ".video-popup",
+			numeration: true,
+			// infinigall: true,
+			spinner: "pulse",
 		});
 	}
-
-	setupVideoModal('playButton', 'videoModal', 'videoFrame', 'https://www.youtube.com/embed/Yl4TOfJhCmQ?autoplay=1');
-	// Video section 1
 
 
 	// Accordion Js
@@ -491,15 +471,6 @@ Version      : 1.0
 	}
 
 
-	// video
-	if ($(".video-popup").length > 0) {
-		new VenoBox({
-			selector: ".video-popup",
-			numeration: true,
-			// infinigall: true,
-			spinner: "pulse",
-		});
-	}
 
 	// Hero slider Js
 	if ($(".hero-thumb").length > 0) {
@@ -546,11 +517,41 @@ Version      : 1.0
 
 
 
-
-
-
-
 })(jQuery);
+
+
+
+// Video section 1
+function setupVideoModal(buttonId, modalId, frameId, videoURL) {
+	document.addEventListener('DOMContentLoaded', () => {
+		const playButton = document.getElementById(buttonId);
+		const videoModal = document.getElementById(modalId);
+		const closeModal = videoModal.querySelector("#closeModal");
+		const videoFrame = document.getElementById(frameId);
+
+		const openVideoModal = () => {
+			videoFrame.src = videoURL;
+			videoModal.style.display = 'flex';
+		};
+
+		const closeVideoModal = () => {
+			videoFrame.src = "";
+			videoModal.style.display = 'none';
+		};
+
+		if (playButton) playButton.addEventListener('click', openVideoModal);
+		if (closeModal) closeModal.addEventListener('click', closeVideoModal);
+
+		videoModal.addEventListener('click', (e) => {
+			if (e.target === videoModal) closeVideoModal();
+		});
+	});
+}
+
+setupVideoModal('playButton', 'videoModal', 'videoFrame', 'https://www.youtube.com/embed/Yl4TOfJhCmQ?autoplay=1');
+// Video section 1
+
+
 
 
 
@@ -601,47 +602,47 @@ if (icon && dateInput) {
 
 /* Subscribe form */
 
-  document.getElementById('subs_form').addEventListener('submit', function (e) {
-    e.preventDefault(); // Stop form from submitting
+document.getElementById('subs_form').addEventListener('submit', function (e) {
+	e.preventDefault(); // Stop form from submitting
 
-    const emailInput = document.getElementById('subscribe_email');
-    const responseMsg = document.getElementById('SubmitResponse');
-    const email = emailInput.value.trim();
+	const emailInput = document.getElementById('subscribe_email');
+	const responseMsg = document.getElementById('SubmitResponse');
+	const email = emailInput.value.trim();
 
-    // Clear previous messages
-    responseMsg.textContent = '';
-    responseMsg.style.color = '';
+	// Clear previous messages
+	responseMsg.textContent = '';
+	responseMsg.style.color = '';
 
-    // Simple email validation regex
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	// Simple email validation regex
+	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (email === '') {
-      responseMsg.textContent = 'Email is required.';
-      responseMsg.style.color = 'red';
-      emailInput.focus();
-      return;
-    }
+	if (email === '') {
+		responseMsg.textContent = 'Email is required.';
+		responseMsg.style.color = 'red';
+		emailInput.focus();
+		return;
+	}
 
-    if (!emailRegex.test(email)) {
-      responseMsg.textContent = 'Please enter a valid email address.';
-      responseMsg.style.color = 'red';
-      emailInput.focus();
-      return;
-    }
+	if (!emailRegex.test(email)) {
+		responseMsg.textContent = 'Please enter a valid email address.';
+		responseMsg.style.color = 'red';
+		emailInput.focus();
+		return;
+	}
 
-    // If valid
-    responseMsg.textContent = 'Thank you for subscribing!';
-    responseMsg.style.color = 'green';
+	// If valid
+	responseMsg.textContent = 'Thank you for subscribing!';
+	responseMsg.style.color = 'green';
 
-    // Optionally clear input
-    emailInput.value = '';
-	
+	// Optionally clear input
+	emailInput.value = '';
+
 	// Auto-hide after 3 seconds (3000ms)
 	setTimeout(() => {
-	  responseMsg.textContent = '';
+		responseMsg.textContent = '';
 	}, 3000);
-	
-  });
+
+});
 
 
 
