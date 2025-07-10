@@ -594,6 +594,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
   .title {
     line-height: 1.1;
     margin-bottom: 22px;
+
+    a {
+      color: $black;
+    }
   }
 
   p {
@@ -759,12 +763,18 @@ only screen and (min-width: 576px) and (max-width: 767px),
   overflow: hidden;
 
   .widget-title {
-    color: $theme-dark;
+    color: $white;
     font-weight: 600;
     position: relative;
     margin-bottom: 25px;
     line-height: 1;
     z-index: 1;
+  }
+}
+
+.post-title {
+  a {
+    color: $white;
   }
 }
 
@@ -790,14 +800,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 
-
-
-
-
-
 .mega-menu-pages-single-inner {
-  padding: 35px 30px;
-  background-color: $primary-bg-color;
   border-radius: 10px;
 }
 
@@ -820,6 +823,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   position: relative;
   overflow: hidden;
   z-index: 2;
+  border-radius: 10px;
 }
 
 .tj-sidebar-cta::before {
@@ -832,6 +836,20 @@ only screen and (min-width: 576px) and (max-width: 767px),
   background: linear-gradient(153.92deg, #051229 43.48%, #00bbd1 124.42%);
   z-index: -1;
   opacity: 0.85;
+}
+
+
+.project-text {
+  span {
+    color: $white;
+    font-weight: 700;
+  }
+
+  .title {
+    color: $color_body2;
+    padding-top: 4px;
+}
+
 }
 
 .tj-sidebar-cta h3 {

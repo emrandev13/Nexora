@@ -44,7 +44,7 @@ h6 {
 p {
   margin: 0;
   padding: 0;
-  color: #111;
+  color: #777;
 }
 
 a {
@@ -207,7 +207,7 @@ a {
 }
 .section_title p {
   font-size: 16px;
-  color: #111;
+  color: #1c1c1c;
   line-height: 30px;
   margin-top: 8px;
 }
@@ -1073,7 +1073,7 @@ button.main_btn {
 .header_social_icon_list a {
   display: inline-block;
   text-decoration: none;
-  color: #111;
+  color: #777;
   transition: 0.4s;
 }
 .header_social_icon_list a:hover {
@@ -1103,8 +1103,13 @@ button.main_btn {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(22, 25, 32, 0.7);
+  background: linear-gradient(to top, rgba(12, 30, 33, 0.97) 0%, rgba(12, 30, 33, 0.5) 50%, rgba(12, 30, 33, 0.7) 100%);
   z-index: -1;
+}
+
+.hero_video_bg {
+  background-image: url(../../img/home/3.webp) !important;
+  height: 850px !important;
 }
 
 .banner_title {
@@ -1314,7 +1319,7 @@ button.main_btn {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background: linear-gradient(90deg, rgb(12, 30, 33) 20%, rgba(12, 30, 33, 0.4) 60%, rgba(12, 30, 33, 0.1) 100%);
+  background: linear-gradient(to top, rgba(12, 30, 33, 0.97) 0%, rgba(12, 30, 33, 0.5) 50%, rgba(12, 30, 33, 0.7) 100%);
 }
 .tj-slider-item .slider-wrapper {
   padding: 200px 0px 170px 0px;
@@ -1406,10 +1411,6 @@ button.main_btn {
 }
 
 /* END Slider CSS */
-.hero_video_section {
-  height: 850px !important;
-}
-
 .hero_buttons_area {
   margin-bottom: 115px;
 }
@@ -1836,7 +1837,7 @@ button.main_btn {
 }
 
 .main_sidebar_widget {
-  background-color: rgba(0, 187, 209, 0.27);
+  background-color: #002930;
   margin-bottom: 30px;
   padding: 30px;
   position: relative;
@@ -1845,7 +1846,7 @@ button.main_btn {
   overflow: hidden;
 }
 .main_sidebar_widget .widget-title {
-  color: #0c1e21;
+  color: #fff;
   font-weight: 600;
   position: relative;
   margin-bottom: 25px;
@@ -2399,6 +2400,9 @@ button.main_btn {
   line-height: 1.1;
   margin-bottom: 22px;
 }
+.post-details-wrapper .title a {
+  color: #000;
+}
 .post-details-wrapper p {
   margin-bottom: 30px;
 }
@@ -2530,7 +2534,7 @@ button.main_btn {
 }
 
 .tj-sidebar-widget {
-  background-color: rgba(0, 187, 209, 0.27);
+  background-color: #002930;
   margin-bottom: 30px;
   padding: 30px;
   position: relative;
@@ -2539,12 +2543,16 @@ button.main_btn {
   overflow: hidden;
 }
 .tj-sidebar-widget .widget-title {
-  color: #0c1e21;
+  color: #fff;
   font-weight: 600;
   position: relative;
   margin-bottom: 25px;
   line-height: 1;
   z-index: 1;
+}
+
+.post-title a {
+  color: #fff;
 }
 
 .service-categories ul li a {
@@ -2565,8 +2573,6 @@ button.main_btn {
 }
 
 .mega-menu-pages-single-inner {
-  padding: 35px 30px;
-  background-color: rgba(0, 187, 209, 0.27);
   border-radius: 10px;
 }
 
@@ -2582,6 +2588,7 @@ button.main_btn {
   position: relative;
   overflow: hidden;
   z-index: 2;
+  border-radius: 10px;
 }
 
 .tj-sidebar-cta::before {
@@ -2594,6 +2601,15 @@ button.main_btn {
   background: linear-gradient(153.92deg, #051229 43.48%, #00bbd1 124.42%);
   z-index: -1;
   opacity: 0.85;
+}
+
+.project-text span {
+  color: #fff;
+  font-weight: 700;
+}
+.project-text .title {
+  color: #a9b8b8;
+  padding-top: 4px;
 }
 
 .tj-sidebar-cta h3 {
@@ -3035,6 +3051,7 @@ button.main_btn {
 }
 .team_card svg path {
   transition: all 0.4s ease-in-out;
+  stroke: #fff;
 }
 .team_card:hover .social_icon_list {
   transform: translateY(0);
@@ -3390,7 +3407,7 @@ button.main_btn {
 
 .pricing-header {
   margin-bottom: 40px;
-  background-color: #00bbd1;
+  background-color: #002930;
   padding: 50px 40px 40px;
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
@@ -3504,7 +3521,7 @@ button.main_btn {
 }
 
 #footer_section {
-  background: #002930;
+  background: #191A23;
 }
 
 .footer_left p {
@@ -3709,7 +3726,7 @@ span.course_sub {
 }
 
 .blog_details {
-  background: #c2dcfb;
+  background: rgba(0, 187, 209, 0.1);
 }
 
 .tj-sidebar-widget.widget-search .search-box form {
@@ -3803,7 +3820,7 @@ span.course_sub {
 blockquote {
   position: relative;
   padding: 40px 30px 30px;
-  background: rgba(0, 187, 209, 0.27);
+  background: #002930;
   border: 2px solid #00bbd1;
   border-radius: 12px;
   margin-top: 55px;
@@ -3832,7 +3849,7 @@ blockquote p {
 }
 
 blockquote cite {
-  color: #0c1e21;
+  color: #fff;
   display: block;
   text-align: end;
   font-style: normal;
@@ -3885,7 +3902,8 @@ blockquote cite::before {
   border-radius: 50%;
 }
 .post-details-wrapper p {
-  margin-bottom: 30px;
+  margin: 20px 0;
+  color: #a9b8b8;
 }
 
 .tj-tags-post {
@@ -4059,6 +4077,7 @@ blockquote cite::before {
   -moz-column-gap: 15px;
   column-gap: 15px;
   margin-bottom: 15px;
+  color: #a9b8b8;
 }
 .tj-sidebar-widget.tj-recent-posts ul li:last-child {
   margin-bottom: 0;
@@ -4369,7 +4388,7 @@ i.fa-solid.fa-play {
 }
 
 .contact_section {
-  background: rgba(0, 187, 209, 0.27);
+  background: #002930;
 }
 
 .tj-contact-section {
@@ -4439,7 +4458,7 @@ i.fa-solid.fa-play {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 187, 209, 0.27);
+  background: #002930;
   border-radius: 50%;
   margin-bottom: 22px;
   transition: all 0.3s ease-in-out 0s;
@@ -4665,8 +4684,8 @@ i.fa-solid.fa-play {
   position: relative;
   background-attachment: fixed;
   z-index: 1;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 180px;
+  padding-bottom: 140px;
 }
 
 .contact_bg:after {

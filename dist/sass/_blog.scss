@@ -161,7 +161,7 @@ span {
 
 // blog details page
 .blog_details {
-    background: $color_bg_body;
+    background: $secandary-bg-color;
 }
 
 .tj-sidebar-widget {
@@ -294,7 +294,7 @@ blockquote p {
 }
 
 blockquote cite {
-    color: $theme-dark;
+    color: $white;
     display: block;
     text-align: end;
     font-style: normal;
@@ -370,7 +370,8 @@ blockquote cite {
     }
 
     p {
-        margin-bottom: 30px;
+        margin: 20px 0;
+        color: $color_body2;
     }
 }
 
@@ -600,6 +601,7 @@ blockquote cite {
     -moz-column-gap: 15px;
     column-gap: 15px;
     margin-bottom: 15px;
+    color: $color_body2;
 
     &:last-child {
         margin-bottom: 0;
