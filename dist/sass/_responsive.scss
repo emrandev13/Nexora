@@ -1,0 +1,254 @@
+
+// Responsive styles for the website
+// This file contains media queries for different screen sizes
+// and applies specific styles to elements based on the screen size.
+@include respond-to(xl) {
+    .ab-main-menu > nav > ul > li > a {
+        font-size: 15spx !important;
+    }
+
+    .ab-main-menu > nav > ul > li {
+        margin: 0 10px !important;
+    }
+
+
+}
+
+
+
+@include respond-to(lg) {
+    .ab-hamburger,
+    .ab-main-menu>nav>ul>li .sub-menu {
+        background: #051229 !important;
+    }
+
+
+    .buttons_area {
+        display: none !important;
+    }
+
+    .ab-nav {
+        display: none !important;
+    }
+
+	.banner_title h2 {
+        font-size: 36px !important;
+    }
+
+    .banner_title p {
+        font-size: 18px !important;
+    }
+
+    .about_rightbox {
+        display: none !important;
+    }
+
+    .left_box {
+        margin-bottom: 50px;
+    }
+    
+    .feature_card {
+        margin-bottom: 30px;
+    }
+
+    .service_card {
+        margin-bottom: 30px;
+    }
+
+    .cv_right_content {
+        margin-bottom: 50px;
+    }
+
+    #testimonial_reviews_section .owl-nav {
+        display: none;
+    }
+
+    #testimonial_reviews_section .owl-dots {
+        margin-top: 50px !important;
+        display: block !important;
+    }
+
+    #testimonial_reviews_section .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        background: $primary-color;
+    }
+
+    .news_card {
+        margin-bottom: 30px;
+    }
+
+    .footer_left {
+        margin-bottom: 50px;
+    }
+
+    .footer_list {
+        margin-bottom: 50px;
+    }
+
+    .about_left_all_content .left_box .profile_info {
+        left: 59px !important;
+    }
+
+    .faq-img-area {
+        margin-bottom: 50px !important;
+    }
+
+    #team_section .team_title {
+        padding-bottom: 50px !important;
+    }
+
+    .tg-button-wrap {
+        margin-bottom: 50px !important;
+    }
+
+    .newslatter_title {
+        margin-bottom: 50px !important;
+    }
+
+    .newslatter_btn_area {
+        text-align: -webkit-left !important;
+    }
+
+    .contact-form {
+        margin-bottom: 50px;
+    }
+
+
+    .about_video {
+        margin-bottom: 50px;
+    }
+
+    .about_video img {
+        width: 100%;
+    }
+
+    #features_section .image-area {
+        margin-bottom: 50px;
+    }
+    
+    #features_section {
+        padding-bottom: 300px !important;
+    }
+
+    .counter_section {
+        transform: translateY(-185px) !important;
+    }
+    .brand_section {
+        padding-top: 250px !important;
+    }
+
+    #values_section .value_head {
+        flex-direction: column !important;
+        align-items: start !important;
+        margin-bottom: 50px;
+    }
+
+    .values-section {
+        align-items: start !important;
+        flex-direction: column !important;
+    }
+
+    .values-section .left-panel {
+        width: 100% !important;
+        margin-bottom: 50px;
+    }
+
+    .values-section .right-panel {
+        width: 100% !important;
+    }
+
+    #testimonial_carousel .owl-nav {
+        display: none !important;
+    }
+
+    .blog_head {
+        align-items: start !important;
+        flex-direction: column !important;
+        margin-bottom: 50px;
+    }
+
+    .news_card {
+        margin-bottom: 50px !important;
+    }
+
+    .pricing-item.p_bg_2 {
+        margin-top: 0px !important;
+    }
+    #testimonial_carousel.owl-theme .owl-dots {
+       display: block !important;
+    }
+
+
+}
+  
+
+
+@include respond-to(md){
+	.hero_right_img {
+        margin-top: 50px !important;
+    }
+
+    .search-form {
+        flex-direction: column !important;
+    }
+
+    #categories_slider.owl-carousel .owl-nav.disabled {
+        display: none !important;
+    }
+
+     #categories_slider.owl-carousel .owl-dots.disabled {
+        display: block !important;
+    }
+
+    .owl-carousel .owl-carousel .owl-nav.disabled {
+        display: none !important;
+    }
+
+    .ab-main-menu-bars.d-block.d-xl-none {
+        top: 15px;
+        position: absolute;
+        right: 15px;
+    }
+
+
+    .strategy-tabs .tab-buttons .tab_btn {
+        padding: 10px 45px !important;
+    }
+
+    #case_study_carousel.owl-theme .owl-nav {
+        display: none !important;
+    }
+
+    #case_study_carousel.owl-theme .owl-dots {
+       display: block !important;
+    }
+     #case_study_carousel.owl-stage-outer {
+        padding-bottom: 50px;
+    }
+
+    #testimonial_carousel.owl-theme .owl-dots {
+       display: block !important;
+    }
+
+    .footer_bottom_right {
+        text-align: start !important;
+        margin-top: 30px !important;
+    }
+
+
+
+}
+
+
+
+@include respond-to(sm){
+	.brand_section {
+        padding-top: 550px !important;
+    }
+
+    .services_list .service_item .service_btn {
+        margin-inline-start: 0 !important;
+    }
+
+}
+
+

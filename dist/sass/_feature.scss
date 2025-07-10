@@ -1,0 +1,188 @@
+#features_section {
+    background: $section_bg_color;
+
+    .features_title h2 {
+        color: $white;
+    }
+
+   
+    .image-area {
+        img {
+            width: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+        }
+    }
+        
+    .feature-card {
+        padding: 1.5rem;
+        border-radius: 12px;
+        transition: all 0.4s ease;
+        margin-bottom: 30px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px rgba(221, 221, 221, 0.25);
+
+        h4 {
+            margin-top: 0.8rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: $primary-p-color;
+        }
+        
+        p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: $secondary-p-color;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: $secondary-p-color;
+            transition: all 0.4s ease-in-out;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                content: "";
+                bottom: -6px;
+                left: 0;
+                width: 0%;
+                height: 1px;
+                background: $btn_hover;
+                transition: 0.4s;
+            }
+
+            .feature_btn_svg {
+                transition: all 0.4s ease-in-out;
+                margin-left: 6px;
+            }
+
+            &:hover {
+                .feature_btn_svg path {
+                    fill: $btn_hover;
+                }
+
+                .feature_btn_svg {
+                    transform: rotate(45deg);
+                }
+
+                &:hover:after {
+                    content: "";
+                    width: 105%;
+                }
+            }
+        }
+
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            border-radius: 50%;
+            background: #ffffff1f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all 0.4s ease-in-out;
+
+            i {
+                color: #fff;
+                font-size: 20px;
+            }
+
+        }
+
+        &:hover {
+            background: #fff;
+            border: 1px solid $primary-color;
+
+            h4 {
+                color: $btn_hover;
+            }
+
+            p {
+                color: $btn_hover;
+            }
+
+            a {
+                color: $btn_hover; 
+            }
+
+            .feature_btn_svg path {
+                fill: $btn_hover;
+            }
+
+            .icon-circle {
+                background: $primary-color;
+
+                i {
+                    color: #fff;
+                }
+
+            }
+ 
+           
+        }
+    }
+
+}  
+
+#features_section {
+    position: relative;
+    padding-bottom: 180px;
+}
+// counter section
+.counter_section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-110px);
+}
+
+.counter-section {
+    background: $section_bg_color;
+    padding: 30px 30px;
+    border-radius: 18px;
+    box-shadow: 0 1px 29px rgba(221, 221, 221, 0.25);
+
+
+    .counter-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: auto;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+
+        .counter-box {
+            padding: 20px 15px;
+            border-radius: 12px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(221, 221, 221, 0.25);
+
+            span {
+                font-size: 2.5rem;
+                font-weight: 400;
+                color: #fff;
+            }
+
+            p {
+                margin-top: 10px;
+                font-size: 1rem;
+                color: #ccc;
+            }
+        }
+    }
+}

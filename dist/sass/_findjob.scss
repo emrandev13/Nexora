@@ -1,0 +1,368 @@
+// left side
+#find_tour_section {
+    padding-top: 180px;
+}
+
+.banner_title2 {
+        text-align: center;
+        margin-bottom: 100px;
+
+    h2 {
+        color: #000;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        
+
+        .highlight {
+            color: $primary-color;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+
+    p {
+        color: #1D3055;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 20px;
+    }
+
+}
+
+
+
+.search-box,
+.location-box,
+.category-box {
+    background: #FAFAFA;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 30px;
+
+    label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+}
+
+
+
+.input-wrapper,
+.select-wrapper {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    padding: 0 1rem;
+    background: #fff;
+    height: 48px;
+    line-height: 48px;
+}
+
+.input-wrapper i,
+.select-wrapper i {
+    margin-right: 0.5rem;
+    color: #aaa;
+}
+
+.input-wrapper input[type="text"],
+select {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.location-info {
+    margin: 0.8rem 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.radius {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.radius input[type="range"] {
+    flex: 1;
+}
+
+.category-box .popular {
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.category-box .popular a {
+    color: #6a5acd;
+    text-decoration: none;
+}
+
+.category-box .popular a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.filter-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+
+    .filter1 {
+         width: 50%;
+    }
+
+    .filter2 {
+         width: 50%;
+    }
+
+
+}
+
+.filter-card {
+    background: #FAFAFA;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.salary_card {
+    background: #FAFAFA;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 30px;
+
+        h3 {
+            color: #1D3055;
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+
+
+}
+
+.filter-card {
+
+    h3 {
+        color: #1D3055;
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #666;
+
+            input[type="radio"] {
+                accent-color: $primary-color;
+                margin-right: 8px;
+            }
+        }
+    }
+
+}
+
+
+
+.salary-range {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.salary-range input[type="range"] {
+    flex: 1;
+    appearance: none;
+    height: 4px;
+    background: #ddd;
+    border-radius: 2px;
+    outline: none;
+    accent-color: $primary-color;
+}
+
+.tags {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+// right side
+
+.tour-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    margin-bottom: 50px;
+
+}
+
+.filter-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-toggle {
+    display: flex;
+    gap: 5px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon.grid {
+    background-color: #f5f5f5;
+}
+
+.icon.list {
+    background-color: #7a5af8;
+}
+
+.icon svg {
+    width: 16px;
+    height: 16px;
+    fill: #fff;
+}
+
+.dropdown {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    color: #333;
+    width: 135px;
+    height: 48px;
+}
+
+
+
+
+ .tour-card {
+     background: #FAFAFA;
+     border-radius: 12px;
+     padding: 24px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 30px;
+ }
+
+ .tour-info {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .tour-title {
+     color: #1D3055;
+     font-weight: bold;
+     font-size: 18px;
+     margin-bottom: 12px;
+ }
+
+ .tour-meta {
+     display: flex;
+     gap: 16px;
+     font-size: 14px;
+     color: #94a3b8;
+     align-items: center;
+ }
+
+ .tour-meta i {
+     margin-right: 4px;
+ }
+
+
+
+.company_logo {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+
+    i {
+        font-size: 12px;
+        border: 1px solid #000;
+        border-radius: 50px;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: #636060;
+    }
+
+    .logo-2 {
+        width:28px
+    }
+}
+
+
+
+
+ .pagination {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: sans-serif;
+}
+
+.page {
+    border: 2px solid #7c6ee3;
+    background-color: white;
+    color: #7c6ee3;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.page:hover {
+    background-color: #ede9fe;
+}
+
+.page.active {
+    background-color: #7c6ee3;
+    color: white;
+    font-weight: bold;
+}
+
+.dots {
+    color: #7c6ee3;
+    font-size: 24px;
+}
+
+.last {
+    font-weight: bold;
+}

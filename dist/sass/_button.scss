@@ -1,0 +1,102 @@
+
+
+
+.main_btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  position: relative;
+  background-color: $primary-color;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 5px 5px 25px;
+  text-align: center;
+  border-radius: 50px;
+  line-height: 1;
+  z-index: 1;
+  overflow: hidden;
+}
+.main_btn .btn-text {
+  color: $white;
+  overflow: hidden;
+}
+.main_btn .btn-text span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1;
+  text-shadow: 0 30px 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+.main_btn .btn-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  line-height: 1;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  background-color: $theme-dark;
+  border-radius: 50%;
+}
+.main_btn .btn-icon i {
+  color: $white;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.main_btn.btn-dark {
+  background-color: $theme-dark;
+}
+.main_btn.btn-dark .btn-icon {
+  background-color: $white;
+}
+.main_btn.btn-dark .btn-icon i {
+  color: $theme-dark;
+}
+.main_btn.transparent-btn {
+  background-color: transparent;
+  border: 1px solid $color-border-1;
+}
+.main_btn.transparent-btn .btn-text {
+  color: var(--tj-color-heading-primary);
+}
+.main_btn.transparent-btn:hover {
+  border-color: $theme-dark;
+}
+.main_btn:hover .btn-text span {
+  -webkit-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+.main_btn:hover .btn-icon i {
+  -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+          transform: rotate(0);
+}
+
+button.main_btn {
+    border: none;
+}

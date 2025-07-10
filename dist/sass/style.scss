@@ -1,0 +1,25 @@
+// This is the main SCSS file that imports all other SCSS files.
+@import "variables";
+@import "reset";
+@import "spacing";
+@import "button";
+@import "mixins";
+@import "responsive";
+@import "header";
+@import "hero";
+@import "about";
+@import "case-study";
+@import "service";
+@import "value";
+@import "feature";
+@import "brand";
+@import "team";
+@import "accordion";
+@import "review";
+@import "pricing";
+@import "footer";
+@import "blog";
+@import "contact";
+@import "newsletter";
+@import "breadcrumb";
+@import "team-details";

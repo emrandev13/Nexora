@@ -1,0 +1,25 @@
+.cv_all_content {
+    background: #F5F4FF;
+    padding: 60px;
+    border-radius: 16px;
+}
+
+.cv_right_content {
+    h3 {
+        color: $primary-color;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 30px;
+    }
+
+    p {
+        color: #1D3055;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 35px;
+    }
+}

@@ -1,0 +1,103 @@
+#footer_section {
+    background: $section_bg_color;
+}
+.footer_left {
+    p {
+        color: #94a3b8;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        margin-top: 20px;
+        margin-bottom: 35px;
+    }
+
+   
+    .footer_social_icons {
+        li {
+            display: inline-block;
+            padding-right: 8px;
+
+            a {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 50px;
+                border: 1px solid #94a3b8;
+                background: rgba(26, 43, 76, 0.00);
+                color: #94a3b8;
+                display: block;
+                text-align: center;
+                transition: 0.4s;
+
+                &:hover {
+                    background-color: $primary-color;
+                    color: #fff;
+                    border-color: $primary-color;
+                }
+            }
+        }
+    }
+
+}
+
+.footer_list {
+
+    h3 {
+        color: $white;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+
+    li {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 35px;
+
+        a {
+            color: #94a3b8;
+            transition: all 0.4s ease;
+
+            &:hover {
+                color: $primary-color;
+            }
+
+        }
+    }
+}
+
+
+.footer_bottom {
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 1px solid #94a3b8;
+
+    .footer_bottom_left p {
+        color: $secondary-p-color;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+
+    .footer_bottom_right {
+
+        a {
+            color: $secondary-p-color;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+
+
+
+}

@@ -1,0 +1,156 @@
+#team_section {
+  background: $section_bg_color;
+
+  .team_title {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+
+    h2 {
+      color: #fff;
+
+      span {
+        color: $primary-color;
+      }
+    }
+
+    p {
+      color: $primary-p-color;
+    }
+
+  }
+
+
+}
+
+
+
+/* start team section  */
+.team_card {
+  padding: 0 0 30px;
+  border-radius: 45px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 20px rgba(221, 221, 221, 0.25);
+  margin-bottom: 30px;
+
+
+  .divider {
+    height: 1px;
+    background: #000;
+    margin: 20px 0;
+  }
+
+  p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  svg path {
+    transition: all 0.4s ease-in-out;
+  }
+
+  &:hover {
+    .social_icon_list {
+      transform: translateY(0);
+      visibility: visible;
+      opacity: 1;
+    }
+
+    svg path {
+      stroke: $primary-color;
+    }
+
+
+  }
+}
+
+.team_image {
+  text-align: left;
+
+  img {
+    border-top-left-radius: 45px;
+    width: 85%;
+  }
+}
+
+.team_author {
+  h5 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 8px;
+    color: $primary-p-color;
+  }
+
+  span {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: $secondary-p-color;
+  }
+}
+
+.team_btn_area {
+  text-align: center;
+}
+
+.team_content_area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 15px 0 30px;
+}
+
+.social_icon_list {
+  position: absolute;
+  bottom: 90px;
+  right: 8px;
+  transform: translateY(-15%);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+
+  li {
+    a {
+      width: 34px;
+      height: 34px;
+      color: #fff;
+      text-align: center;
+      line-height: 34px;
+      border-radius: 50px;
+      display: block;
+      margin-bottom: 10px;
+      transition: all 0.4s ease-in-out;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+
+
+      &:hover {
+        background: $primary-color;
+        border-color: $primary-color;
+        color: $white;
+      }
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+/* end team section  */
+
+// team page

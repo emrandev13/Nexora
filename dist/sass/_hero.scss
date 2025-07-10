@@ -1,0 +1,363 @@
+#hero_section {
+  background-image: url(../../img/bg/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  height: 700px;
+  padding: 180px 0 100px;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(22 25 32 / 70%);
+    z-index: -1;
+  }
+
+}
+
+.banner_title {
+  margin-bottom: 30px;
+
+  .sub_heading {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    display: inline-block;
+    backdrop-filter: blur(10px);
+    color: #fff;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+
+    .highlight {
+      color: $primary-color;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+
+
+
+  p {
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+}
+
+/* End hero area */
+
+
+
+
+// video
+.home3_title {
+  margin-bottom: 90px;
+}
+
+.blogpost_guide_video_section {
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 1;
+  /* Base container */
+}
+
+.recipe_video_img {
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.blogpost_guide_video_section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 35, 35, 0.4);
+  border-radius: 20px;
+  z-index: 3;
+  /* Background overlay */
+}
+
+.blogpost_guide_video_svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 4;
+  /* Above the overlay */
+}
+
+.blogpost_guide_video_svg::before,
+.blogpost_guide_video_svg::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  animation: ripple 2s linear infinite;
+  z-index: 1;
+  /* Ripple effect, behind the SVG icon */
+}
+
+.blogpost_guide_video_svg::after {
+  animation-delay: 1s;
+}
+
+.blogpost_guide_video_svg svg {
+  position: relative;
+  z-index: 2;
+  /* SVG icon stays on top of everything */
+}
+
+/* Ripple animation */
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+.video_modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.video_modal.active {
+  display: flex;
+}
+
+.video_modal .video_modal_content_detail {
+  position: relative;
+  max-width: 90%;
+  width: 800px;
+}
+
+.video_modal .video_modal_content_detail iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  border-radius: 10px;
+}
+
+.video_modal .video_modal_content_detail .close_modal {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+// home slider
+.tj-slider-section {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  .banner-scroll {
+    left: 60px;
+    bottom: 60px;
+
+    .scroll-down {
+      color: $white;
+
+      span {
+        border-color: $white;
+
+        &::before {
+          background-color: $white;
+        }
+      }
+    }
+
+    @media #{xl, lg} {
+      left: 27px;
+    }
+
+    @media #{md, sm, sm} {
+      left: 12px;
+    }
+  }
+
+  @media #{sm, sm} {
+    margin: 0;
+    border-radius: 12px;
+  }
+}
+
+.tj-slider-item {
+  min-height: 92.5vh;
+  background-color: #0c1e21;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(90deg,
+        rgba(12, 30, 33, 1) 20%,
+        rgba(12, 30, 33, 0.4) 60%,
+        rgba(12, 30, 33, 0.1) 100%);
+  }
+
+  .slider-wrapper {
+    padding: 200px 0px 170px 0px;
+    position: relative;
+    z-index: 3;
+
+    @media #{xl} {
+      padding-left: 50px;
+    }
+
+    @media #{xl} {
+      padding: 190px 0 280px 30px;
+    }
+
+    @media #{lg, md} {
+      padding: 170px 0 280px 0;
+    }
+
+    @media #{sm, sm} {
+      padding: 150px 0 450px 0;
+    }
+  }
+
+}
+
+.swiper-slide {
+  .slider-content {
+
+    .slider-title,
+    .slider-desc,
+    .slider-btn {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition-duration: 0.8s;
+    }
+  }
+
+  &.swiper-slide-active {
+    .slider-content {
+
+      .slider-title,
+      .slider-desc,
+      .slider-btn {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .slider-title {
+        transition-delay: 1s;
+      }
+
+      .slider-desc {
+        transition-delay: 1.25s;
+      }
+
+      .slider-btn {
+        transition-delay: 1.5s;
+      }
+    }
+  }
+}
+
+.slider-bg-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+
+.swiper-slide img {
+  height: 60px;
+}
+
+.swiper-pagination {
+  text-align: start;
+}
+.swiper-pagination-bullet {
+    width: 25px;
+    height: 25px;
+    background-color: $white;
+    opacity: 50%;
+    border-radius: 0;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-right: 10px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 50px;
+    text-align: center;
+}
+
+
+/* END Slider CSS */
+
+// home 3
+.hero_video_section {
+  height: 850px !important;
+}
+.hero_buttons_area {
+  margin-bottom: 115px;
+}

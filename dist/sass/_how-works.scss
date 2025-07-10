@@ -1,0 +1,52 @@
+.work_title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    
+}
+.work_descripetion {
+    color: $primary-color;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.work_icons {
+    text-align: -webkit-center;
+
+    .work_icons_svgs {
+        border-radius: 5px;
+        background: #F5F4FF;
+        width: 133px;
+        height: 133px;
+        text-align: center;
+        line-height: 133px;
+        transition: background 0.3s ease;
+    }
+    
+    .work_icons_svgs svg path,
+    .work_icons_svgs svg rect {
+        transition: stroke 0.3s ease, fill 0.3s ease;
+    }
+    
+    .work_icons_svgs:hover {
+        background: $primary-color;
+    }
+    
+    .work_icons_svgs:hover svg path,
+    .work_icons_svgs:hover svg rect {
+        stroke: #fff;
+    }
+    
+    
+}
+
+
+
+

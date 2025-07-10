@@ -1,0 +1,90 @@
+/* start testimonial section */
+#testimonial_section {
+    background: $section_bg_color;
+}
+.review_title {
+    h2 {
+        color: $white;
+    }
+}
+
+.testimonial_content p {
+    color: $secondary-p-color;
+}
+
+#testimonial_carousel .testimonial_card {
+    padding: 45px 35px 45px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 6px 20px rgba(221, 221, 221, 0.25);
+}
+#testimonial_carousel .testimonial_author_area {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+#testimonial_carousel .testimonial_author {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+#testimonial_carousel .author_image img {
+    border-radius: 50px;
+}
+#testimonial_carousel .testimonial_author_area .author_info h5 {
+    font-size: 24px;
+    color: $primary-p-color;
+}
+#testimonial_carousel .testimonial_author_area .author_info span{
+    font-size: 16px;
+    color: $secondary-p-color;
+}
+#testimonial_carousel .owl-stage-outer {
+    height: 350px;
+}
+.owl-theme .owl-dots .owl-dot span {
+    transition: all 0.4s ease-in-out;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: $primary-color;
+    width: 30px;
+}
+
+#testimonial_carousel {
+    position: relative;
+}
+
+#testimonial_carousel .owl-nav {
+    position: absolute;
+    top: -80px;
+    right: 20px;
+}
+
+
+#testimonial_carousel .owl-nav button i {
+    width: 40px;
+    display: block;
+    height: 40px;
+    border-radius: 50px;
+    line-height: 40px;
+    background: rgba(0, 187, 209, 0.3);
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    transition: all 0.4s ease-in-out;   
+}
+#testimonial_carousel .owl-nav button i:hover {
+    background: $primary-color;
+    color: #fff;
+}
+#testimonial_carousel.owl-theme .owl-nav [class*=owl-]:hover {
+    background: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+.owl-theme .owl-nav {
+     margin-top: 0px !important;
+}
+/* end testimonial section */

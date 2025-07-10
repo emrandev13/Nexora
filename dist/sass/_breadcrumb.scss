@@ -1,0 +1,74 @@
+/* start breadcrumb section */
+
+.contact_bg {
+  background-image: url(../../img/bg/5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 1;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.contact_bg:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(11 74 82 / 57%);
+    z-index: -1;
+    backdrop-filter: blur(15px);
+}
+
+.gift_top_section {
+  text-align: center;
+}
+
+.gift_top_section h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+.gift_top_section .gift_top_nav {
+  display: flex;
+  justify-content: center;
+}
+
+.gift_top li a {
+  color: $white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.gift_item.breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  padding-right: var(--bs-breadcrumb-item-padding-x);
+  color:  $white;
+  content: "//";
+}
+
+
+.breadcrumb.gift_top {
+    background: rgb(255 255 255 / 18%);
+    padding: 8px 25px;
+    border-radius: 30px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgb(255 255 255 / 15%);
+}
+
+.breadcrumb-item a i{
+  color: $primary-color; 
+  margin-right: 6px;
+}
+
+/* End breadcrumb section */
