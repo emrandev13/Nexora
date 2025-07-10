@@ -56,11 +56,11 @@
   width: 42px;
   height: 42px;
   overflow: hidden;
-  background-color: $theme-dark;
+  background-color: $white;
   border-radius: 50%;
 }
 .main_btn .btn-icon i {
-  color: $white;
+  color: $primary-color;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);

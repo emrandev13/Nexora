@@ -310,12 +310,12 @@ a {
   width: 42px;
   height: 42px;
   overflow: hidden;
-  background-color: #0c1e21;
+  background-color: #fff;
   border-radius: 50%;
 }
 
 .main_btn .btn-icon i {
-  color: #fff;
+  color: #00bbd1;
   transform: rotate(-45deg);
   transition: all 0.3s ease-in-out;
 }
@@ -3391,7 +3391,7 @@ button.main_btn {
 .pricing-header {
   margin-bottom: 40px;
   background-color: #00bbd1;
-  padding: 80px 40px 40px;
+  padding: 50px 40px 40px;
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
 }

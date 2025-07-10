@@ -599,53 +599,49 @@ if (icon && dateInput) {
 }
 
 
-
-
-
 /* Subscribe form */
 
-document.getElementById('subs_form').addEventListener('submit', function (e) {
-	e.preventDefault(); // Stop form from submitting
+  document.getElementById('subs_form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Stop form from submitting
 
-	const emailInput = document.getElementById('subscribe_email');
-	const responseMsg = document.getElementById('SubmitResponse');
-	const email = emailInput.value.trim();
+    const emailInput = document.getElementById('subscribe_email');
+    const responseMsg = document.getElementById('SubmitResponse');
+    const email = emailInput.value.trim();
 
-	// Clear previous messages
-	responseMsg.textContent = '';
-	responseMsg.style.color = '';
+    // Clear previous messages
+    responseMsg.textContent = '';
+    responseMsg.style.color = '';
 
-	// Simple email validation regex
-	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // Simple email validation regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-	if (email === '') {
-		responseMsg.textContent = 'Email is required.';
-		responseMsg.style.color = 'red';
-		emailInput.focus();
-		return;
-	}
+    if (email === '') {
+      responseMsg.textContent = 'Email is required.';
+      responseMsg.style.color = 'red';
+      emailInput.focus();
+      return;
+    }
 
-	if (!emailRegex.test(email)) {
-		responseMsg.textContent = 'Please enter a valid email address.';
-		responseMsg.style.color = 'red';
-		emailInput.focus();
-		return;
-	}
+    if (!emailRegex.test(email)) {
+      responseMsg.textContent = 'Please enter a valid email address.';
+      responseMsg.style.color = 'red';
+      emailInput.focus();
+      return;
+    }
 
-	// If valid
-	responseMsg.textContent = 'Thank you for subscribing!';
-	responseMsg.style.color = 'green';
+    // If valid
+    responseMsg.textContent = 'Thank you for subscribing!';
+    responseMsg.style.color = 'green';
 
-	// Optionally clear input
-	emailInput.value = '';
-
+    // Optionally clear input
+    emailInput.value = '';
+	
 	// Auto-hide after 3 seconds (3000ms)
 	setTimeout(() => {
-		responseMsg.textContent = '';
+	  responseMsg.textContent = '';
 	}, 3000);
-
-});
-
+	
+  });
 
 
 
