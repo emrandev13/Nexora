@@ -229,6 +229,7 @@ Version      : 1.0
 											}
 										}, 15); // Adjust the interval for animation speed
 									}
+									observer.unobserve(progressContainer); // Disconnect after animation
 								}
 							});
 						},
@@ -275,16 +276,6 @@ Version      : 1.0
 			});
 		});
 
-
-		// video
-		if ($(".video-popup").length > 0) {
-			new VenoBox({
-				selector: ".video-popup",
-				numeration: true,
-				// infinigall: true,
-				spinner: "pulse",
-			});
-		}
 
 
 
@@ -333,6 +324,8 @@ Version      : 1.0
 	}); // Closed $(document).ready() properly
 
 
+
+
 	// preloader 
 	window.addEventListener('load', () => {
 		const preloader = document.getElementById('preloader');
@@ -343,6 +336,7 @@ Version      : 1.0
 	});
 
 	// preloader 
+
 
 	// top btn		
 	const btn = document.getElementById('toTopBtn');
@@ -375,6 +369,17 @@ Version      : 1.0
 
 	});
 	// nice select
+
+	// video popup
+	$(document).ready(function () {
+		if ($(".video-popup").length > 0) {
+			new VenoBox({
+				selector: ".video-popup",
+				numeration: true,
+				spinner: "pulse",
+			});
+		}
+	});
 
 	// marquee
 	$(document).ready(function () {
@@ -518,38 +523,6 @@ Version      : 1.0
 
 
 })(jQuery);
-
-
-
-// Video section 1
-function setupVideoModal(buttonId, modalId, frameId, videoURL) {
-	document.addEventListener('DOMContentLoaded', () => {
-		const playButton = document.getElementById(buttonId);
-		const videoModal = document.getElementById(modalId);
-		const closeModal = videoModal.querySelector("#closeModal");
-		const videoFrame = document.getElementById(frameId);
-
-		const openVideoModal = () => {
-			videoFrame.src = videoURL;
-			videoModal.style.display = 'flex';
-		};
-
-		const closeVideoModal = () => {
-			videoFrame.src = "";
-			videoModal.style.display = 'none';
-		};
-
-		if (playButton) playButton.addEventListener('click', openVideoModal);
-		if (closeModal) closeModal.addEventListener('click', closeVideoModal);
-
-		videoModal.addEventListener('click', (e) => {
-			if (e.target === videoModal) closeVideoModal();
-		});
-	});
-}
-
-setupVideoModal('playButton', 'videoModal', 'videoFrame', 'https://www.youtube.com/embed/Yl4TOfJhCmQ?autoplay=1');
-// Video section 1
 
 
 

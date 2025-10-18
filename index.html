@@ -177,10 +177,9 @@
 					<div class="col-lg-6 col-md-12 col-sm-12">
 						<div class="about_video wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
 							<img src="img/about/1.jpg" alt="Video">
-							<a class="video-btn video-popup" data-autoplay="true" data-vbtype="video" data-maxwidth="1200px" href="https://www.youtube.com/watch?v=vZE0j_WCRvI">
+							<a class="video-btn video-popup venobox" data-autoplay="true" data-vbtype="video" data-maxwidth="1200px" href="https://www.youtube.com/watch?v=vZE0j_WCRvI">
 								<span><i class="fa-solid fa-play"></i></span>
 							</a>
-
 						</div>
 					</div>
 
@@ -280,7 +279,7 @@
 						</div>
 					</div>
 
-					<div class="col-lg-6 col-md-12 col-sm-12 wow animate__animated animate__fadeInRight" data-wow-delay=".1s"">
+					<div class="col-lg-6 col-md-12 col-sm-12 wow animate__animated animate__fadeInRight" data-wow-delay=".1s">
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-sm-12">
 								<div class="feature-card">
@@ -1532,10 +1531,10 @@
 
 							<form id="contactForm" class="wow animate__animated animate__fadeInUp animate__delay-0.8s">
 								<div class="form-group name_group">
-									<input type="text" class="form-control" id="name" placeholder="Enter your full name"
-										required>
-									<input type="email" class="form-control" id="email" placeholder="Enter your email"
-										required>
+									<input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name"
+										autocomplete="name" required>
+									<input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"
+										autocomplete="email" required>
 								</div>
 
 								<select class="form-control contact_select" id="services" required>
@@ -1579,7 +1578,7 @@
 					<div class="col-lg-6 col-md-12 col-sm-12 text-end">
 						<div class="cta_form wow animate__animated animate__fadeInRight animate__delay-0.8s">
 							<form id="subs_form">
-								<input type="email" name="email" id="subscribe_email" placeholder="Enter Your Email" required>
+								<input type="email" name="subsemail" id="subscribe_email" placeholder="Enter Your Email" required>
 								<button type="submit" class="main_btn">
 									<span class="btn-text"><span>Subscribe</span></span>
 									<span class="btn-icon"><i class="fa-solid fa-arrow-right-long"></i></span>
